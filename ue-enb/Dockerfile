@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-COPY s1aptester/s1aptester /s1aptester
+RUN git clone https://github.com/facebookexperimental/S1APTester.git s1aptester
 
 # resolvendo problema de compilação.
 COPY ts_utls.c /s1aptester/TestCntlrStub/src/ts_utls.c
