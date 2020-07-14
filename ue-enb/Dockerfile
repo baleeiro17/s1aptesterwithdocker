@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get -y install git iperf3 make rsync gcc
+RUN apt-get update && apt-get -y install git iperf3 make rsync gcc
 RUN git clone https://github.com/facebookexperimental/S1APTester.git s1aptester
 
 # resolvendo problema de compilação.
@@ -21,7 +21,7 @@ COPY nbAppCfg.txt /s1aptester/TestCntlrStub/bin/nbAppCfg.txt
 
 COPY exec.sh /exec.sh
 RUN chmod +x /exec.sh
-ENTRYPOINT ["/exec.sh"]
+# ENTRYPOINT ["/exec.sh"]
 
 
 
