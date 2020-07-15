@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd S1APTester/TestCntlrStub/bin && ./testCntrlr -f testCaseList_1.txt
+cd s1aptester/TestCntlrStub/bin && ./testCntrlr -f testCaseList_1.txt
