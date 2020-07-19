@@ -6,6 +6,7 @@ In this repository, we developed an environment for simulating UE and ENB using 
 
 For more information:
 * [free5gc](https://www.free5gc.org/)
+* [S1APtester](https://github.com/facebookexperimental/S1APTester)
 
 
 ## Dependencies
